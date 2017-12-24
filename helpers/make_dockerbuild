@@ -1,10 +1,6 @@
-ifneq ($(OS), Windows_NT)
-	docker := docker.exe
-else
-	docker := docker
-endif
 
 DOCKER_TAGS := -t $(REGISTRY)/$(IMAGE):$(VERSION) -t $(REGISTRY)/$(IMAGE):latest
+
 KIT_VERSION_DOCKER = "\
 	-X $(GIT_HOST)/$(REPO)/$(NAME)/vendor/github.com/kolide/kit/version.appName=$(APP_NAME) \
 	-X $(GIT_HOST)/$(REPO)/$(NAME)/vendor/github.com/kolide/kit/version.version=$(VERSION) \
