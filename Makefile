@@ -100,7 +100,7 @@ docker: build-in-docker build-image
 
 # upload the docker image
 upload:
-	$(docker) push $(REGISTRY)/$(IMAGE)
+	docker push $(REGISTRY)/$(IMAGE)
 
 ### HELPER STEPS ###
 
