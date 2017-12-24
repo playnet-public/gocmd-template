@@ -12,5 +12,5 @@ func Template(name string) string {
 
 //Error returns some string and error
 func Error() (string, error) {
-	return "ups", errors.New("something bad happend")
+	return "ups", errors.New("something bad happened")
 }

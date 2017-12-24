@@ -1,6 +1,8 @@
 # gocmd-template
 Our template project for building command-line tools with golang
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/playnet-public/gocmd-template)](https://goreportcard.com/report/github.com/playnet-public/gocmd-template)
+
 ## Dependencies
 
 This project has a pretty complex Makefile and therefore requires `make`.
@@ -53,7 +55,7 @@ To set the log level run the tool like this:
 ./build/template -logtostderr -v=3
 ```
 
-The other logging package is [zap](https://github.com/uber-go/zap) which offers us flexible, production-grade and strctured logging.
+The other logging package is [zap](https://github.com/uber-go/zap) which offers us flexible, production-grade and structured logging.
 This template contains an example for configuring and using zap. For logging important (non-debugging) information inside PlayNet Applications always use zap.
 
 For more information on how to use it, refer to the [docs](https://godoc.org/go.uber.org/zap).
@@ -76,7 +78,7 @@ The Dockerfile containing the built binaries is from scratch and very small. If 
 
 ## Standards
 
-This Project represents internal code standards related to Go development at PlayNet. We are permanentely improving these standards, but this state is already being used in production.
+This Project represents internal code standards related to Go development at PlayNet. We are permanently improving these standards, but this state is already being used in production.
 
 PlayNet tools and apps should always match highest Golang standards. Testing is not optionally!
 Please refer to our other Guideline Documents in the [Wiki](https://wiki.play-net.org).
