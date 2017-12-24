@@ -103,7 +103,7 @@ func do(log *zap.Logger) error {
 
 	// glog for debug levels
 	glog.V(5).Infoln("fetching template return")
-	tmpl := template.Template()
+	tmpl := template.Template(appKey)
 	log.Info("got template", zap.String("result", tmpl))
 
 	glog.V(5).Infoln("causing some errors")
