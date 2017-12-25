@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/playnet-public/gocmd-template/template"
+	"github.com/playnet-public/gocmd-template/pkg/template"
 
 	raven "github.com/getsentry/raven-go"
 	"github.com/golang/glog"

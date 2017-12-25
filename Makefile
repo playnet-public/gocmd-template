@@ -18,7 +18,7 @@ REGISTRY     := quay.io
 IMAGE        := playnet/$(NAME)
 
 PATH := $(GOPATH)/bin:$(PATH)
-TOOLS_DIR := bin
+TOOLS_DIR := cmd
 VERSION = $(shell git describe --tags --always --dirty)
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 REVISION = $(shell git rev-parse HEAD)
@@ -57,7 +57,7 @@ endif
 
 # test entire repo
 test:
-	@go test -cover -race -v $(shell go list ./... | grep -v /vendor/)
+	@go test -cover -race $(shell go list ./... | grep -v /vendor/)
 
 # install passed in tool project
 install:
@@ -87,7 +87,7 @@ run: build
 	-v=2))
 
 # run specified tool from code
-dev:
+dev: test
 	@$(if $(TOOL),go run -ldflags ${KIT_VERSION} $(TOOLS_DIR)/$(TOOL)/*.go \
 	-logtostderr \
 	-v=4, \

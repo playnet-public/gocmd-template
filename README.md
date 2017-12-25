@@ -17,7 +17,7 @@ This project is meant to offer a basic template for developing PlayNet command-l
 The Makefile is configurable to some extent by providing variables at the top.
 Any further changes should be thought of carefully as they might brake CI/CD compatibility.
 
-One project might contain multiple tools whose main packages reside under `bin`. Other packages go directly into the root directory.
+One project might contain multiple tools whose main packages reside under `cmd`. Other packages like libraries go into the `pkg` directory.
 Single projects can be handled by calling `make toolname maketarget` like for example:
 ```
 make template dev
@@ -29,7 +29,7 @@ make full build
 Build output is being sent to `./build/`.
 
 If you only package one tool this might seam slightly redundant but this is meant to provide consistence over all projects.
-To simplify this, you can simply call `make maketarget` when only one tool is located beneath `bin`. If there are more than one, this won't do anything (including not return 1) so be careful.
+To simplify this, you can simply call `make maketarget` when only one tool is located beneath `cmd`. If there are more than one, this won't do anything (including not return 1) so be careful.
 
 ## Dependency Management
 
