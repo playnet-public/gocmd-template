@@ -1,7 +1,7 @@
 ###################### PlayNet CMD Template Makefile ######################
 #
 # This Makefile is used to manage the PlayNet command-line template
-# All possible tools have to reside under their respective folders in bin/
+# All possible tools have to reside under their respective folders in cmd/
 # and are being autodetected.
 # 'make full' would then process them all while 'make toolname' would only
 # handle the specified one(s).

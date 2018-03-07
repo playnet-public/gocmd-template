@@ -84,4 +84,9 @@ PlayNet tools and apps should always match highest Golang standards. Testing is 
 Please refer to our other Guideline Documents in the [Wiki](https://wiki.play-net.org).
 
 Suggestions are always welcome and questions will be happily answered.
-If you would like to
+
+## Contributions
+
+Pull Requests and Issue Reports are welcome.
+If you are interested in contributing, feel free to [get in touch](https://discord.gg/WbrXWJB).
+PlayNet is always looking for interested developers to join our vision.
